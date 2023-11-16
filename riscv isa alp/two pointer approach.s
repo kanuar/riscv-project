@@ -1,6 +1,6 @@
 .data
-prices: .word 8,4,6,9,5
-size: .word 5
+prices: .word 8,4,6,9,5 # change to input array 
+size: .word 5 # change to size of input array
 maxprofit: .zero 4
 
 .text
