@@ -1,6 +1,6 @@
 .data
-ary: .word 7, 1, 5, 3, 6, 4
-size: .word 6
+ary: .word 7, 1, 5, 3, 6, 4 # change to input array
+size: .word 6 # change to size of input array
 profit: .zero 4
 
 .text
