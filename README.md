@@ -17,3 +17,6 @@ Output: 0
 Explanation: In this case, no transactions are done and the max profit = 0.
 
 We have implemented 2 approaches, one using two pointer method and the other using greedy method.
+
+### presentation link for the project 
+[Canva presentation](https://www.canva.com/design/DAF0Y5fvWmU/tbPtELrMDv9JfT89_O9MJQ/view?utm_content=DAF0Y5fvWmU&utm_campaign=designshare&utm_medium=link&utm_source=editor)
