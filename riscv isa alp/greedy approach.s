@@ -1,6 +1,6 @@
 .data
-ary: .word 7, 1, 5, 3, 6, 4 # change to input array
-size: .word 6 # change to size of input array
+ary: .word 7, 1, 5, 3, 6, 4
+size: .word 6
 profit: .zero 4
 
 .text
@@ -15,12 +15,12 @@ movemax:
     j continue
 
 start:
-    li s0,0
-    la x1,ary
-    la x2,size
-    lw x2,0(x2)
-    la x3,profit
-    addi x2,x2,-1
+    li s0,0 #storing maximum as 0 initially
+    la x1,ary #loading address of array[0]
+    la x2,size 
+    lw x2,0(x2) #loading size of array
+    la x3,profit 
+    addi x2,x2,-1 #len-1 
     lw a0,0(x1) #sub pointer
 loop:
     lw a1,4(x1) #cur pointer
@@ -33,5 +33,5 @@ continue:
     addi x2,x2,-1
     bne x2,x0,loop
 
-ender:
+ender: # to store final result
     sw s0,0(x3)
